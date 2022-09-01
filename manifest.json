@@ -1,0 +1,28 @@
+{
+    "manifest_version": 2,
+    "name": "cuce2ficha",
+    "description": "Ingresa un CUCE y recibe su ficha en sicoes.gob.bo",
+    "version": "1.0",
+    "homepage_url": "https://github.com/mauforonda/cuce2ficha",
+    "applications": {
+      "gecko": {
+        "id": "cuce2ficha@mauforonda",
+        "strict_min_version": "55.0a1"
+      }
+    },
+    "icons": {
+      "48": "icons/icon.svg",
+      "96": "icons/icon.svg"
+    },
+    "browser_action": {
+      "default_title": "cuce2ficha",
+      "default_popup": "popup/popup.html",
+      "default_icon": "icons/icon.svg"
+    },
+    "background": {
+        "scripts": ["background.js"]
+    },
+    "permissions": [
+        "webRequest", "webRequestBlocking", "https://www.sicoes.gob.bo/portal/contrataciones/*" 
+      ]
+  }
