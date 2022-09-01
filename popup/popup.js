@@ -13,7 +13,7 @@ const write = function writeQuery() {
         input.blur();
         input.style = 'border: none; color: #fbfbfb; background: #fbfbfb;';
         cuce = input.value.trim()
-        pattern = /[0-9]{2}-[0-9]{4}-[0-9]{2}-[0-9]*-[0-9]-[0-9]/g
+        pattern = /[0-9]{2}-[0-9]{4}-[0-9]{2}-[0-9]*-[0-9]-[0-9A-Z]/g
         if (pattern.test(cuce)) {
             browser.tabs.create({url: `https://www.sicoes.gob.bo/portal/contrataciones/ficha/fichaProceso.php?cp=${cuce}`})
         }
