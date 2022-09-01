@@ -6,7 +6,7 @@
     "homepage_url": "https://github.com/mauforonda/cuce2ficha",
     "applications": {
       "gecko": {
-        "id": "cuce2ficha@mauforonda",
+        "id": "cuceficha@mauforonda",
         "strict_min_version": "55.0a1"
       }
     },
